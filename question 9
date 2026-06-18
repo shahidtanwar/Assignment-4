@@ -1,0 +1,19 @@
+# Writing data
+file = open("student.txt", "w")
+
+name = input("Enter student name: ")
+marks = input("Enter marks: ")
+
+file.write("Name: " + name + "\n")
+file.write("Marks: " + marks)
+
+file.close()
+
+# Reading data
+file = open("student.txt", "r")
+
+content = file.read()
+print("\nFile Content:")
+print(content)
+
+file.close()
