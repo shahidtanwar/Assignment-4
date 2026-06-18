@@ -1,0 +1,10 @@
+def simple_interest(p, r=5, t=2):
+    si = (p * r * t) / 100
+    return si
+
+
+# Positional arguments
+print("Simple Interest =", simple_interest(10000))
+
+# Keyword arguments
+print("Simple Interest =", simple_interest(p=10000, r=8, t=3))
