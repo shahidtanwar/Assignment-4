@@ -1,0 +1,13 @@
+numbers = [10, 7, 13, 8, 19, 20, 23]
+
+print("Prime numbers are:")
+
+for num in numbers:
+    if num > 1:
+        prime = True
+        for i in range(2, num):
+            if num % i == 0:
+                prime = False
+                break
+        if prime:
+            print(num)
